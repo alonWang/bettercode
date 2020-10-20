@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.alonwang.bettercode.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.alonwang.bettercode.MyBundle
 
 class MyApplicationService {
 
