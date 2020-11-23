@@ -6,9 +6,12 @@
     <!-- Product and plugin compatibility requirements -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
-   <applicationListeners>
-       <listener class="com.github.alonwang.bettercode.impl.MainTipServiceImpl" topic="BulkFileListener"
-   </applicationListeners>
+    <project-components>
+        <component>
+            <interface-class>com.github.alonwang.bettercode.MainTipService</interface-class>
+            <implementation-class>com.github.alonwang.bettercode.impl.MainTipServiceImpl</implementation-class>
+        </component>
+    </project-components>
 
 
 </idea-plugin>

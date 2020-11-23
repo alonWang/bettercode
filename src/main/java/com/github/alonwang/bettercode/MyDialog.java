@@ -14,6 +14,7 @@ public class MyDialog extends DialogWrapper {
     protected MyDialog() {
         super(true);
         setTitle("better code");
+        init();
     }
 
     @Override
@@ -28,8 +29,8 @@ public class MyDialog extends DialogWrapper {
         return centerPanel;
 
     }
-    public static void cccc(){
-        new MyDialog().show();
-        System.out.println("cccc");
+    public static DialogWrapper cccc(){
+        return new MyDialog();
+
     }
 }
